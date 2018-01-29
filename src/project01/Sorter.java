@@ -81,5 +81,34 @@ public class Sorter {
     public void javaSort(int[] arr) {
         Arrays.sort(arr);
     }
+
+    //Select Algorithm
+    public void select(int[] arr, int k){
+        /*
+    int e = arr[new int rand()] //random value in A
+    arr = new int Al[] //all values in A less than e
+    for (int i = 0; i < arr[].length; i++){
+        if (e > arr[i])
+            Al[i] = arr[i];
+    }
+    arr = new int Ae[] //all values in A equal to e
+    for (int i = 0; i < arr[].length; i++){
+        if (e == arr[i])
+            Ae[i] = arr[i];
+    }
+    arr = new int Ar[] //all values in A greater than e
+    for (int i = 0; i < arr[].length; i++){
+        if (e < arr[i])
+            Ar[i] = arr[i];
+    }
+    if k < len(Al)
+    return select(Al, k)
+    elif k<= len(Al) + len(Ae)
+    return e
+    else
+    return select(Ar, k - len(Al) - len(Ae))
+    */
+    }
+
     
 }
