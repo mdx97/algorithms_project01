@@ -103,12 +103,12 @@ public class Sorter {
                 Ar[i] = arr[i];
         }
 
-        if k < Al[].length {
+        if (k < Al[].length) {
             return select(Al, k);
         } else if (k <= (Al[].length + Ae[].length){
             return e;
         } else {
-            return select(Ar, k - (Al[].length + Ae[].length))
+            return select(Ar, k - (Al[].length + Ae[].length));
         }
     }
 
