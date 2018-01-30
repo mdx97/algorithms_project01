@@ -83,7 +83,7 @@ public class Sorter {
     }
 
     //Select Algorithm
-    public void select(int[] arr, int k){
+    public select(int[] arr, int k){
         int e = arr[new int rand()]; //random value in A
         arr = new int Al[]; //all values in A less than e
         for (int i = 0; i < arr[].length; i++){
