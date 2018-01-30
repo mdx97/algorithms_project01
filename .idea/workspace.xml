@@ -270,8 +270,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project01/Sorter.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
           <caret line="85" column="11" lean-forward="false" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
+=======
+        <state relative-caret-position="67">
+          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
