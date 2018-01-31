@@ -11,7 +11,6 @@ public class Project01 {
     public static void main(String[] args) {
         Sorter sorter = new Sorter();
         int[] arr = new int[]{10, 4, 3, 9, 1, 40, 11, 2, 0, 300, 273, -4, 9, 44, 89};
-        
 
         Scanner in = new Scanner(System.in);
         System.out.println("\nEnter Array Size: ");
