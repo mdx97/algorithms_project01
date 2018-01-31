@@ -22,5 +22,9 @@ public class Project01 {
         // Java sort.
         sorter.javaSort(arr);
         System.out.println(Arrays.toString(arr));
+
+        // Select Algorithm
+        sorter.select(arr, k);
+        System.out.println(Arrays.toString(arr));
     }
 }

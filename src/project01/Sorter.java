@@ -2,6 +2,7 @@
 package project01;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Sorter {
     private int[] array;
@@ -83,32 +84,28 @@ public class Sorter {
     }
 
     //Select Algorithm
-    public select(int[] arr, int k){
-        int e = arr[new int rand()]; //random value in A
-        arr = new int Al[]; //all values in A less than e
-        for (int i = 0; i < arr[].length; i++){
+    public int select(int[] arr, int k){
+        Random rand = new Random();
+        int e = rand.nextInt(arr.length); //random value in A
+        int Al[] = new int[arr.length]; //all values in A less than e
+        int Ae[] = new int[arr.length]; //all values in A equal to e
+        int Ar[] = new int[arr.length]; //all values in A greater than e
+
+        for (int i = 0; i < arr.length; i++){
             if (e > arr[i])
                 Al[i] = arr[i];
-        }
-
-        arr = new int Ae[]; //all values in A equal to e
-        for (int i = 0; i < arr[].length; i++){
             if (e == arr[i])
                 Ae[i] = arr[i];
-        }
-
-        arr = new int Ar[]; //all values in A greater than e
-        for (int i = 0; i < arr[].length; i++){
             if (e < arr[i])
                 Ar[i] = arr[i];
         }
 
-        if (k < Al[].length) {
+        if (k < Al.length) {
             return select(Al, k);
-        } else if (k <= (Al[].length + Ae[].length){
+        } else if (k <= (Al.length + Ae.length)){
             return e;
         } else {
-            return select(Ar, k - (Al[].length + Ae[].length));
+            return select(Ar, k - (Al.length + Ae.length));
         }
     }
 
