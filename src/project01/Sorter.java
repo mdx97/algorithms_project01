@@ -92,11 +92,11 @@ public class Sorter {
         int Ar[] = new int[arr.length]; //all values in A greater than e
 
         for (int i = 0; i < arr.length; i++){
-            if (e > arr[i])
+            if (arr[e] > arr[i])
                 Al[i] = arr[i];
-            if (e == arr[i])
+            if (arr[e] == arr[i])
                 Ae[i] = arr[i];
-            if (e < arr[i])
+            if (arr[e] < arr[i])
                 Ar[i] = arr[i];
         }
 
