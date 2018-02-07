@@ -86,10 +86,10 @@ public class Sorter {
     //Select Algorithm
     public int select(int[] arr, int k){
         Random rand = new Random();
-        int e = rand.nextInt(arr.length); //random value in A
-        int Al[] = new int[arr.length]; //all values in A less than e
-        int Ae[] = new int[arr.length]; //all values in A equal to e
-        int Ar[] = new int[arr.length]; //all values in A greater than e
+        int e = rand.nextInt(arr.length); //random value in arr
+        int Al[] = new int[arr.length]; //all values in arr less than e
+        int Ae[] = new int[arr.length]; //all values in arr equal to e
+        int Ag[] = new int[arr.length]; //all values in arr greater than e
 
         for (int i = 0; i < arr.length; i++){
             if (arr[e] > arr[i])
@@ -97,15 +97,15 @@ public class Sorter {
             if (arr[e] == arr[i])
                 Ae[i] = arr[i];
             if (arr[e] < arr[i])
-                Ar[i] = arr[i];
+                Ag[i] = arr[i];
         }
 
         if (k < Al.length) {
             return select(Al, k);
-        } else if (k <= (Al.length + Ae.length)){
+        } else if (k < (Al.length + Ae.length)){
             return e;
         } else {
-            return select(Ar, k - (Al.length + Ae.length));
+            return select(Ag, k - (Al.length + Ae.length));
         }
     }
 
