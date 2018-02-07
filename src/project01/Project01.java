@@ -13,7 +13,10 @@ public class Project01 {
         Sorter sorter = new Sorter();
         Random rand = new Random();
         int k = 0;
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
         /*
         Scanner in = new Scanner(System.in);
         System.out.println("\nEnter Array Size: ");
@@ -24,6 +27,7 @@ public class Project01 {
         System.out.println("\nNumber of Iterations = " + iters);
         System.out.println("\nTime Elapsed = ");
         */
+<<<<<<< Updated upstream
         
         int N = 50;
         float ITERS = 100;
@@ -46,6 +50,8 @@ public class Project01 {
         System.out.println("Selection sort average runtime: " + ((elapsed / ITERS) / 1000000f) + " ms");
         
         
+=======
+>>>>>>> Stashed changes
         /*
         from time import perf_counter
         N = 100
