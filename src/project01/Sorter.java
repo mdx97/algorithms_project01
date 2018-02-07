@@ -107,7 +107,5 @@ public class Sorter {
         } else {
             return select(Ag, k - (Al.length + Ae.length));
         }
-    }
-
-    
+    }    
 }
