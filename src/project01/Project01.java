@@ -12,7 +12,8 @@ public class Project01 {
         Sorter sorter = new Sorter();
         int[] arr = new int[]{10, 4, 3, 9, 1, 40, 11, 2, 0, 300, 273, -4, 9, 44, 89};
         int k = 0;
-
+        
+        /*
         Scanner in = new Scanner(System.in);
         System.out.println("\nEnter Array Size: ");
         int N = in.nextInt();
@@ -21,7 +22,8 @@ public class Project01 {
         System.out.println("\nArray Size = " + N);
         System.out.println("\nNumber of Iterations = " + iters);
         System.out.println("\nTime Elapsed = ");
-
+        */
+        
         /*
         from time import perf_counter
         N = 100
