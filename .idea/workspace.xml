@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3f95a7e-b5a7-4ee7-9b31-fe5591631ff6" name="Default" comment="" />
+    <list default="true" id="e3f95a7e-b5a7-4ee7-9b31-fe5591631ff6" name="Default" comment="">
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
