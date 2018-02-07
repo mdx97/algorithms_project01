@@ -1,13 +1,12 @@
 
 package project01;
 
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
 
 public class Sorter {
     private int[] array;
     private int[] tmpArray;
-    
+
     public Sorter() {
         
     }
@@ -84,28 +83,28 @@ public class Sorter {
     }
 
     //Select Algorithm
-    public int select(int[] arr, int k){
+    public int select(ArrayList<Integer> arr, int k){
         Random rand = new Random();
-        int e = rand.nextInt(arr.length); //random value in arr
-        int Al[] = new int[arr.length]; //all values in arr less than e
-        int Ae[] = new int[arr.length]; //all values in arr equal to e
-        int Ag[] = new int[arr.length]; //all values in arr greater than e
+        int e = rand.nextInt(arr.size()); //random value in arr
+        ArrayList<Integer> Al = new ArrayList<Integer>(arr.size()); //all values in arr less than e
+        ArrayList<Integer> Ae = new ArrayList<Integer>(arr.size()); //all values in arr equal to e
+        ArrayList<Integer> Ag = new ArrayList<Integer>(arr.size()); //all values in arr greater than e
 
-        for (int i = 0; i < arr.length; i++){
-            if (arr[e] > arr[i])
-                Al[i] = arr[i];
-            if (arr[e] == arr[i])
-                Ae[i] = arr[i];
-            if (arr[e] < arr[i])
-                Ag[i] = arr[i];
+        for (int i = 0; i < arr.size(); i++){
+            if (arr.get(e) > arr.get(i))
+                Al.add(arr.get(i));
+            if (arr.get(e) == arr.get(i))
+                Ae.add(arr.get(i));
+            if (arr.get(e) < arr.get(i))
+                Ag.add(arr.get(i));
         }
 
-        if (k < Al.length) {
+        if (k < Al.size()) {
             return select(Al, k);
-        } else if (k < (Al.length + Ae.length)){
+        } else if (k < (Al.size() + Ae.size())){
             return e;
         } else {
-            return select(Ag, k - (Al.length + Ae.length));
+            return select(Ag, k - (Al.size() + Ae.size()));
         }
     }    
 }

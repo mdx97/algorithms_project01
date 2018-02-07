@@ -4,20 +4,14 @@
  */
 package project01;
 
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.Random;
+import java.util.*;
 
 public class Project01 {
     public static void main(String[] args) {
         Sorter sorter = new Sorter();
         Random rand = new Random();
         int k = 0;
-<<<<<<< Updated upstream
-        
-=======
->>>>>>> Stashed changes
-        /*
+
         Scanner in = new Scanner(System.in);
         System.out.println("\nEnter Array Size: ");
         int N = in.nextInt();
@@ -25,33 +19,35 @@ public class Project01 {
         int iters = in.nextInt();
         System.out.println("\nArray Size = " + N);
         System.out.println("\nNumber of Iterations = " + iters);
-        System.out.println("\nTime Elapsed = ");
-        */
-<<<<<<< Updated upstream
-        
-        int N = 50;
+
+
+        /*int n = 50;
         float ITERS = 100;
-        int[] arr = new int[50];
+        */
+        int[] arr = new int[N];
+        ArrayList<Integer> ray = new ArrayList<Integer>(N);
         float elapsed = 0;
         float start, end;
-        
+
         for (int i = 0; i < N; i++) {
-            arr[i] = rand.nextInt(99);
+            arr[i] = rand.nextInt(N);
         }
         
         // Selection sort.
-        for (int i = 0; i < ITERS; i++) {
+        for (int i = 0; i < iters; i++) {
             start = System.nanoTime();
             sorter.selectionSort(arr);
             end = System.nanoTime();
             elapsed += (end - start);
         }
+
+        System.out.println("\nTime Elapsed = " + elapsed);
         
-        System.out.println("Selection sort average runtime: " + ((elapsed / ITERS) / 1000000f) + " ms");
+        System.out.println("Selection sort average runtime: " + ((elapsed / iters) / 1000000f) + " ms");
+
+
         
-        
-=======
->>>>>>> Stashed changes
+
         /*
         from time import perf_counter
         N = 100
@@ -73,7 +69,7 @@ public class Project01 {
 
 
         // Selection sort.
-        /*sorter.selectionSort(arr);
+        sorter.selectionSort(arr);
         System.out.println(Arrays.toString(arr));
         
         // Merge sort.
@@ -85,7 +81,7 @@ public class Project01 {
         System.out.println(Arrays.toString(arr));
 
         // Select Algorithm
-        sorter.select(arr, k);
-        System.out.println(Arrays.toString(arr));*/
+        sorter.select(ray, k);
+        System.out.println(Arrays.toString(arr));
     }
 }
