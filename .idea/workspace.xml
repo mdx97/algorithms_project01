@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3f95a7e-b5a7-4ee7-9b31-fe5591631ff6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithms_project01/project01/Project01.class" afterPath="$PROJECT_DIR$/out/production/algorithms_project01/project01/Project01.class" />
       <change beforePath="$PROJECT_DIR$/src/project01/Project01.java" afterPath="$PROJECT_DIR$/src/project01/Project01.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="Project01.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project01/Project01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+            <state relative-caret-position="246">
+              <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding>
                 <element signature="e#760#769#0" expanded="true" />
               </folding>
@@ -499,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project01/Project01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        <state relative-caret-position="246">
+          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding>
             <element signature="e#760#769#0" expanded="true" />
           </folding>

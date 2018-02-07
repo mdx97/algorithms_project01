@@ -45,12 +45,45 @@ public class Project01 {
             elapsed += (end - start);
         }
 
-        System.out.println("\nTime Elapsed = " + elapsed);
-        
-        System.out.println("Selection sort average runtime: " + ((elapsed / iters) / 1000000f) + " ms");
+        sorter.selectionSort(arr);
+        System.out.println("\nSelection Sort: \n" + Arrays.toString(arr));
+        System.out.println("Average runtime: " + ((elapsed / (float)iters)) + " ms");
 
+        // Merge sort.
+        for (int i = 0; i < iters; i++) {
+            start = System.nanoTime();
+            sorter.mergeSort(arr);
+            end = System.nanoTime();
+            elapsed += (end - start);
+        }
 
-        
+        sorter.mergeSort(arr);
+        System.out.println("\nMerge Sort: \n" + Arrays.toString(arr));
+        System.out.println("Average runtime: " + ((elapsed / (float)iters)) + " ms");
+
+        // Java sort.
+        for (int i = 0; i < iters; i++) {
+            start = System.nanoTime();
+            sorter.javaSort(arr);
+            end = System.nanoTime();
+            elapsed += (end - start);
+        }
+
+        sorter.javaSort(arr);
+        System.out.println("\nJava Sort: \n" + Arrays.toString(arr));
+        System.out.println("Average runtime: " + ((elapsed / (float)iters)) + " ms");
+
+        // Select Algorithm
+        for (int i = 0; i < iters; i++) {
+            start = System.nanoTime();
+            sorter.select(ray, k);
+            end = System.nanoTime();
+            elapsed += (end - start);
+        }
+
+        sorter.select(ray, k);
+        System.out.println("\nSelect Algorithm: \n" + Arrays.toString(arr));
+        System.out.println("Average runtime: " + ((elapsed / (float)iters)) + " ms");
 
         /*
         from time import perf_counter
@@ -70,22 +103,5 @@ public class Project01 {
         elapsed += (end - start)
         print('Select algorithm:', elapsed/N, 's')
          */
-
-
-        // Selection sort.
-        sorter.selectionSort(arr);
-        System.out.println(Arrays.toString(arr));
-        
-        // Merge sort.
-        sorter.mergeSort(arr);
-        System.out.println(Arrays.toString(arr));
-        
-        // Java sort.
-        sorter.javaSort(arr);
-        System.out.println(Arrays.toString(arr));
-
-        // Select Algorithm
-        sorter.select(ray, k);
-        System.out.println(Arrays.toString(arr));
     }
 }
