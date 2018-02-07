@@ -32,6 +32,10 @@ public class Project01 {
         for (int i = 0; i < N; i++) {
             arr[i] = rand.nextInt(N);
         }
+
+        for (int i = 0; i < N; i++) {
+            ray.add(rand.nextInt(N));
+        }
         
         // Selection sort.
         for (int i = 0; i < iters; i++) {
