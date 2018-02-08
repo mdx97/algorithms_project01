@@ -12,6 +12,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import java.util.ArrayList;
 
 /**
  *
@@ -44,11 +45,16 @@ public class SorterTest {
     @Test
     public void testSelectionSort() {
         System.out.println("selectionSort");
-        int[] arr = null;
+        int[] arr = new int[] {9, 2, 4, 7, 5};
         Sorter instance = new Sorter();
         instance.selectionSort(arr);
+        assert (arr[0] == 2);
+        assert (arr[1] == 4);
+        assert (arr[2] == 5);
+        assert (arr[3] == 7);
+        assert (arr[4] == 9);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -57,16 +63,19 @@ public class SorterTest {
     @Test
     public void testMergeSort() {
         System.out.println("mergeSort");
-        int[] arr = null;
+        int[] arr = new int[] {9, 2, 4, 7, 5};
         Sorter instance = new Sorter();
         instance.mergeSort(arr);
+        assert (arr[0] == 2);
+        assert (arr[1] == 4);
+        assert (arr[2] == 5);
+        assert (arr[3] == 7);
+        assert (arr[4] == 9);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
-
-    /**
-     * Test of merge method, of class Sorter.
-     */
+    
+    /*
     @Test
     public void testMerge() {
         System.out.println("merge");
@@ -77,10 +86,6 @@ public class SorterTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-
-    /**
-     * Test of mergeParts method, of class Sorter.
-     */
     @Test
     public void testMergeParts() {
         System.out.println("mergeParts");
@@ -91,7 +96,7 @@ public class SorterTest {
         instance.mergeParts(lowIdx, mid, highIdx);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of javaSort method, of class Sorter.
@@ -99,11 +104,16 @@ public class SorterTest {
     @Test
     public void testJavaSort() {
         System.out.println("javaSort");
-        int[] arr = null;
+        int[] arr = new int[] {9, 2, 4, 7, 5};
         Sorter instance = new Sorter();
         instance.javaSort(arr);
+        assert (arr[0] == 2);
+        assert (arr[1] == 4);
+        assert (arr[2] == 5);
+        assert (arr[3] == 7);
+        assert (arr[4] == 9);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -112,14 +122,19 @@ public class SorterTest {
     @Test
     public void testSelect() {
         System.out.println("select");
-        int[] arr = null;
-        int k = 0;
+        ArrayList<Integer> arrList = new ArrayList<Integer>();
+        arrList.add(9);
+        arrList.add(2);
+        arrList.add(4);
+        arrList.add(7);
+        arrList.add(5);
+        int k = 1;
         Sorter instance = new Sorter();
-        int expResult = 0;
-        int result = instance.select(arr, k);
+        int expResult = 4;
+        int result = instance.select(arrList, k);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
