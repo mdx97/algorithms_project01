@@ -122,7 +122,7 @@ public class SorterTest {
     @Test
     public void testSelect() {
         System.out.println("select");
-        ArrayList<Integer> arrList = new ArrayList<Integer>();
+        ArrayList<Integer> arrList = new ArrayList();
         arrList.add(9);
         arrList.add(2);
         arrList.add(4);
@@ -130,7 +130,7 @@ public class SorterTest {
         arrList.add(5);
         int k = 1;
         Sorter instance = new Sorter();
-        int expResult = 4;
+        int expResult = 1;
         int result = instance.select(arrList, k);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

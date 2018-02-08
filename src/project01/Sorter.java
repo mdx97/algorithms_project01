@@ -86,9 +86,9 @@ public class Sorter {
     public int select(ArrayList<Integer> arr, int k){
         Random rand = new Random();
         int e = rand.nextInt(arr.size()); //random value in arr
-        ArrayList<Integer> Al = new ArrayList<Integer>(arr.size()); //all values in arr less than e
-        ArrayList<Integer> Ae = new ArrayList<Integer>(arr.size()); //all values in arr equal to e
-        ArrayList<Integer> Ag = new ArrayList<Integer>(arr.size()); //all values in arr greater than e
+        ArrayList<Integer> Al = new ArrayList(arr.size()); //all values in arr less than e
+        ArrayList<Integer> Ae = new ArrayList(arr.size()); //all values in arr equal to e
+        ArrayList<Integer> Ag = new ArrayList(arr.size()); //all values in arr greater than e
 
         for (int i = 0; i < arr.size(); i++){
             if (arr.get(e) > arr.get(i))

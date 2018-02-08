@@ -11,13 +11,11 @@ public class Project01 {
         Sorter sorter = new Sorter();
         Random rand = new Random();
         int k;
-  
-
 
         int N = 1000;
         int ITERS = 100;
         int[] arr = new int[N];
-        ArrayList<Integer> ray = new ArrayList<Integer>(N);
+        ArrayList<Integer> ray = new ArrayList<Integer>();
         float elapsed = 0;
         float start, end;
 
